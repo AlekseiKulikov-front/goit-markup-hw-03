@@ -325,7 +325,7 @@ button {
 
 /*PORTFOLIO*/
 .work-examples-section {
-  padding-bottom: 94px;
+  padding-bottom: var(--section-pb);
 }
 .cards-list {
   display: flex;
