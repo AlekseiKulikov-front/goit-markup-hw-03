@@ -67,7 +67,6 @@ button {
 
 
 /*NAVIGATION*/
-
 .navigation {
   display: flex;
   align-items: center;
@@ -162,6 +161,7 @@ button {
   padding: 10px 32px;
   margin-top: 30px;
   margin-bottom: 200px;
+  cursor: pointer;
 }
 .hero-btn:focus,
 .hero-btn:hover {
