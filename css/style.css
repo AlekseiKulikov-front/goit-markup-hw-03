@@ -36,6 +36,7 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 body {
@@ -112,7 +113,7 @@ button {
   margin-left: auto;
   
 }
-.contact-item {
+.contact-item:not(:last-child) {
   margin-right: 50px;
 }
 .contact-link {
@@ -150,8 +151,8 @@ text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  padding-left: 252px;
-  padding-right: 252px;
+  max-width: 696px;
+  margin: auto;
   
  
 }
@@ -225,7 +226,7 @@ text-align: center;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  max-width: 100%;
+  
 }
 .work-heading {
   font-weight: bold;
@@ -260,7 +261,7 @@ text-align: center;
   margin-top: -30px; 
 }
 .team-list-item {
-  max-width: 100%;
+  
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -286,14 +287,21 @@ text-align: center;
   color: var(--second-color);
 }
 .team-list-content-wrapper {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 
 /*PORTFOLIO-PAGE*/
 .visually-hidden {
-  display: none;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 .services-section {
   padding-top: var(--section-pt);
@@ -345,7 +353,7 @@ text-align: center;
 }
 .service-list-item:not(:first-child) {
   margin-left: 8px;
-  max-width: 100%;
+  
 }
 .cards-list {
   display: flex;
@@ -360,7 +368,10 @@ text-align: center;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+.cards-list-item:hover {
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .portofolio-link {
   font-family: var(--main-font-family);
@@ -396,9 +407,16 @@ text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo-link {
+.logo-link-footer {
   display: block;
   margin-bottom: 20px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--blue-color);
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
